@@ -1,5 +1,5 @@
 {
-  "name": "oas-breach-audit",
+  "name": "@vensas-gmbh/oas-breach-audit",
   "version": "0.1.0",
   "description": "Audit an OpenAPI-described HTTP service for BREACH compression-attack preconditions (compression + TLS + reflected input + secret-bearing responses).",
   "keywords": [
@@ -12,6 +12,10 @@
     "pentest"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vensas/oas-breach-audit.git"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -21,6 +25,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18.17"
   },
@@ -30,7 +37,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src test"
+    "lint": "eslint src test",
+    "release": "semantic-release"
   },
   "dependencies": {
     "@apidevtools/swagger-parser": "^10.1.1",
@@ -41,9 +49,12 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/git": "^11.0.1",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.10.2",
     "eslint": "^9.17.0",
+    "semantic-release": "^25.0.9",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.19.0",

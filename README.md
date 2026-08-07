@@ -76,7 +76,7 @@ gate CI.
 ## Library usage
 
 ```ts
-import { loadSpec, extractOperations, scan, toConsole } from "oas-breach-audit";
+import { loadSpec, extractOperations, scan, toConsole } from "@vensas-gmbh/oas-breach-audit";
 
 const doc = await loadSpec("./openapi.yaml");
 const report = await scan({
