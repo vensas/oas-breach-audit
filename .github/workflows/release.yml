@@ -19,7 +19,7 @@ jobs:
       pull-requests: write # to comment on released pull requests
       id-token: write # to enable npm OIDC trusted publishing and provenance
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event.workflow_run.head_sha }}
           fetch-depth: 0
