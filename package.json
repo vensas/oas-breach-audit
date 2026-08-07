@@ -1,6 +1,6 @@
 {
   "name": "@vensas-gmbh/oas-breach-audit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Audit an OpenAPI-described HTTP service for BREACH compression-attack preconditions (compression + TLS + reflected input + secret-bearing responses).",
   "keywords": [
     "openapi",
